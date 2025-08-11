@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endodontic Irrigants 2025: Advanced Clinical Applications</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .header h1 {
+            font-size: 2.8rem;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header .subtitle {
+            font-size: 1.3rem;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+        }
+
+        .header .highlight {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            display: inline-block;
+            font-weight: bold;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .navigation {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .nav-btn {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .nav-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+        }
+
+        .nav-btn.active {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            transform: scale(1.05);
+        }
+
+        .content-section {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            display: none;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .content-section.active {
+            display: block;
+            animation: fadeInUp 0.6s ease;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .section-title {
+            font-size: 2.2rem;
+            color: #2c3e50;
+            margin-bottom: 25px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subsection {
+            margin-bottom: 35px;
+            padding: 25px;
+            background: rgba(102, 126, 234, 0.05);
+            border-radius: 15px;
+            border-left: 5px solid #667eea;
+            transition: all 0.3s ease;
+        }
+
+        .subsection:hover {
+            transform: translateX(5px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.1);
+        }
+
+        .subsection h3 {
+            font-size: 1.5rem;
+            color: #34495e;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .subsection h3::before {
+            content: "🔬";
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+
+        .key-points {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 20px 0;
+        }
+
+        .key-points h4 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .evidence-box {
+            background: rgba(46, 204, 113, 0.1);
+            border: 2px solid #2ecc71;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px 0;
+        }
+
+        .evidence-box h4 {
+            color: #27ae60;
+            margin-bottom: 10px;
+        }
+
+        .breakthrough-box {
+            background: rgba(231, 76, 60, 0.1);
+            border: 2px solid #e74c3c;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px 0;
+        }
+
+        .breakthrough-box h4 {
+            color: #c0392b;
+            margin-bottom: 10px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            transform: perspective(1000px) rotateY(0deg);
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: perspective(1000px) rotateY(5deg) translateY(-5px);
+            box-shadow: 0 15px 35px rgba(102, 126, 234, 0.3);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .protocols-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 25px 0;
+        }
+
+        .protocol-card {
+            background: rgba(255, 255, 255, 0.9);
+            border: 2px solid #667eea;
+            border-radius: 15px;
+            padding: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .protocol-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(102, 126, 234, 0.2);
+            border-color: #764ba2;
+        }
+
+        .timeline {
+            position: relative;
+            margin: 30px 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(to bottom, #667eea, #764ba2);
+        }
+
+        .timeline-item {
+            display: flex;
+            margin: 30px 0;
+            position: relative;
+        }
+
+        .timeline-item:nth-child(odd) {
+            flex-direction: row-reverse;
+        }
+
+        .timeline-content {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 25px;
+            width: 45%;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border: 2px solid #667eea;
+        }
+
+        .timeline-marker {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 20px;
+            background: #667eea;
+            border-radius: 50%;
+            border: 4px solid white;
+            box-shadow: 0 0 0 3px #667eea;
+        }
+
+        .future-tech {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 20px;
+            margin: 25px 0;
+            text-align: center;
+        }
+
+        .download-section {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            margin-top: 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn {
+            background: linear-gradient(45deg, #2ecc71, #27ae60);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 10px;
+            box-shadow: 0 8px 25px rgba(46, 204, 113, 0.3);
+        }
+
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(46, 204, 113, 0.4);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .nav-buttons {
+                flex-direction: column;
+            }
+            
+            .timeline::before {
+                left: 20px;
+            }
+            
+            .timeline-item {
+                flex-direction: column;
+                margin-left: 40px;
+            }
+            
+            .timeline-content {
+                width: 100%;
+            }
+            
+            .timeline-marker {
+                left: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Endodontic Irrigants 2025</h1>
+            <p class="subtitle">Advanced Clinical Applications and Research Innovations</p>
+            <div class="highlight">Success Rates: 72-85% → >97%</div>
+        </div>
+
+        <div class="navigation">
+            <div class="nav-buttons">
+                <button class="nav-btn active" onclick="showSection('overview')">Overview</button>
+                <button class="nav-btn" onclick="showSection('naocl')">Sodium Hypochlorite</button>
+                <button class="nav-btn" onclick="showSection('technologies')">Revolutionary Tech</button>
+                <button class="nav-btn" onclick="showSection('alternatives')">Alternatives</button>
+                <button class="nav-btn" onclick="showSection('bioactive')">Bioactive Irrigants</button>
+                <button class="nav-btn" onclick="showSection('nanotechnology')">Nanotechnology</button>
+                <button class="nav-btn" onclick="showSection('safety')">Safety Protocols</button>
+                <button class="nav-btn" onclick="showSection('clinical')">Clinical Implications</button>
+                <button class="nav-btn" onclick="showSection('future')">Future Directions</button>
+            </div>
+        </div>
+
+        <div id="overview" class="content-section active">
+            <h2 class="section-title">Clinical Landscape Evolution</h2>
+            
+            <div class="key-points">
+                <h4>🎯 Key Breakthrough: 2022-2025 Research Period</h4>
+                <p>Recent evidence reveals revolutionary advances in endodontic irrigation that promise to transform root canal success rates from 72-85% to over 97% through novel delivery systems and bioactive formulations.</p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">97%</div>
+                    <div>Success Rate with Revolutionary Technologies</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">8-10x</div>
+                    <div>Faster Tissue Dissolution</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">98%</div>
+                    <div>Bacterial Reduction vs 53% Conventional</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">1000x</div>
+                    <div>Biofilm Resistance Increase with Age</div>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>Conventional vs Revolutionary Approaches</h3>
+                <div class="protocols-grid">
+                    <div class="protocol-card">
+                        <h4>Conventional Irrigation (2020-2022)</h4>
+                        <ul>
+                            <li>Success rates: 72-85%</li>
+                            <li>Limited complex anatomy penetration</li>
+                            <li>Biofilm persistence challenges</li>
+                            <li>Time-based protocols</li>
+                        </ul>
+                    </div>
+                    <div class="protocol-card">
+                        <h4>Revolutionary Technologies (2022-2025)</h4>
+                        <ul>
+                            <li>Success rates: >97%</li>
+                            <li>GentleWave multisonic systems</li>
+                            <li>PIPS laser activation</li>
+                            <li>Nanotechnology-enhanced formulations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="naocl" class="content-section">
+            <h2 class="section-title">Sodium Hypochlorite: Gold Standard Evidence</h2>
+            
+            <div class="evidence-box">
+                <h4>🔬 Landmark Research Findings (2025)</h4>
+                <p>Umbrella review analyzing 13 systematic reviews and meta-analyses confirms NaOCl's superior performance, achieving complete E. faecalis elimination (0.00 ± 0.00 log CFU/mL) at 5.25% concentration within 10 seconds.</p>
+            </div>
+
+            <div class="subsection">
+                <h3>Mechanism of Action</h3>
+                <ul>
+                    <li><strong>Non-specific oxidation</strong> through protein denaturation</li>
+                    <li><strong>Enzymatic inactivation</strong> and lipid degradation</li>
+                    <li><strong>DNA/RNA disruption</strong></li>
+                    <li><strong>Biofilm matrix breakdown</strong></li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <h3>Concentration-Dependent Relationships</h3>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">6%</div>
+                        <div>Superior to 2.5% NaOCl (p<0.05)</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">5.25%</div>
+                        <div>No significant difference from 6%</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">10 sec</div>
+                        <div>Complete elimination time</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="breakthrough-box">
+                <h4>⚠️ Biofilm Age Challenge</h4>
+                <p>Mature biofilms (>21 days) exhibit 1000-1500x increased resistance compared to planktonic cells, requiring extended contact times or combination protocols.</p>
+            </div>
+        </div>
+
+        <div id="technologies" class="content-section">
+            <h2 class="section-title">Revolutionary Irrigation Technologies</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h4>GentleWave Technology</h4>
+                        <p>FDA-cleared multisonic system utilizing broad-spectrum acoustic energy. Clinical outcomes: 96.2% healing rates vs 72.6% conventional protocols.</p>
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <div class="stat-number">96.2%</div>
+                                <div>Healing Rate</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-marker"></div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h4>PIPS Laser Activation</h4>
+                        <p>Photon-Induced Photoacoustic Streaming using Er:YAG laser at 2940 nm. Superior smear layer removal at all apical levels.</p>
+                        <ul>
+                            <li>Energy: 20 mJ with 50 μs pulses</li>
+                            <li>No direct laser-dentin contact</li>
+                            <li>Effective in #25/0.06 canals</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-marker"></div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h4>SWEEPS & R-SWEEPS</h4>
+                        <p>Advanced 2024 patents: Shock Wave Enhanced Emission with dual consecutive laser pulses. Reduced NaOCl requirements to 0.5-1.0%.</p>
+                    </div>
+                    <div class="timeline-marker"></div>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>Passive Ultrasonic Irrigation Optimization</h3>
+                <div class="evidence-box">
+                    <h4>📊 Clinical Evidence</h4>
+                    <ul>
+                        <li>Optimal protocol: 3 × 20-second intervals with irrigant refresh</li>
+                        <li>Microbial reduction: RD -0.15 (95% CI -0.28, -0.01; p = 0.03)</li>
+                        <li>Periapical healing: RD -0.09 (95% CI -0.16, -0.02; p = 0.01)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="alternatives" class="content-section">
+            <h2 class="section-title">Sodium Hypochlorite Alternatives</h2>
+            
+            <div class="protocols-grid">
+                <div class="protocol-card">
+                    <h4>🫧 Ozone Therapy</h4>
+                    <ul>
+                        <li>Ozonated water: 0.5-4 mg/L concentration</li>
+                        <li>Superior penetration to lateral canals</li>
+                        <li>Protocol: Oil + water + gas insufflation (120s)</li>
+                        <li>Biocompatible antimicrobial activity</li>
+                    </ul>
+                </div>
+                
+                <div class="protocol-card">
+                    <h4>🧪 Chlorine Dioxide</h4>
+                    <ul>
+                        <li>Broad pH spectrum activity (pH 3-9)</li>
+                        <li>5% ClO₂ = 5.25% NaOCl for pulp dissolution</li>
+                        <li>Superior biofilm penetration</li>
+                        <li>Size-selective antimicrobial properties</li>
+                    </ul>
+                </div>
+                
+                <div class="protocol-card">
+                    <h4>🌿 Natural Irrigants</h4>
+                    <ul>
+                        <li>Neem extract: Reduced post-operative pain</li>
+                        <li>Propolis 11%: Superior vs C. albicans</li>
+                        <li>Selective use: allergic/biocompatibility cases</li>
+                        <li>Cannot routinely replace NaOCl</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>Photodynamic Therapy Integration</h3>
+                <div class="breakthrough-box">
+                    <h4>💡 Enhanced Antimicrobial Protocols</h4>
+                    <ul>
+                        <li>Photosensitizers: Methylene blue, toluidine blue, curcumin</li>
+                        <li>Activation: 630 nm LED at 3 W/cm²</li>
+                        <li>Results: 99% CFU reduction achieved</li>
+                        <li>Synergistic effects when combined with NaOCl</li>
+                        <li>Limitation: Dentin staining concerns</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="bioactive" class="content-section">
+            <h2 class="section-title">Bioactive Irrigants for Regenerative Endodontics</h2>
+            
+            <div class="key-points">
+                <h4>🧬 Calcium Silicate-Based Revolution</h4>
+                <p>MTA, Biodentine, Bioaggregate, and iRoot BP Plus provide enhanced bioactivity with clinical success rates of 90-99% using single-cone obturation techniques.</p>
+            </div>
+
+            <div class="subsection">
+                <h3>Bioceramic Sealers Performance</h3>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">7 days</div>
+                        <div>TotalFill BC antibacterial effects</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">2 weeks</div>
+                        <div>EndoSequence BC antimicrobial activity</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">Highest</div>
+                        <div>BioRoot RCS after EDTA treatment</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="evidence-box">
+                <h4>🔬 Regenerative Protocol Optimization</h4>
+                <ul>
+                    <li><strong>≤1.5% NaOCl maximum</strong> for stem cell viability preservation</li>
+                    <li><strong>17% EDTA</strong> capable of rescuing stem cells from NaOCl cytotoxicity</li>
+                    <li><strong>Saline final rinse</strong> promotes stem cell adherence</li>
+                    <li><strong>Growth factor preservation</strong> essential for successful pulp regeneration</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="nanotechnology" class="content-section">
+            <h2 class="section-title">Nanotechnology Applications</h2>
+            
+            <div class="protocols-grid">
+                <div class="protocol-card">
+                    <h4>🔬 Silver Nanoparticles (AgNPs)</h4>
+                    <ul>
+                        <li>1% AgNP = conventional irrigant efficacy</li>
+                        <li>Enhanced 20-30 μm dentinal tubule penetration</li>
+                        <li>With 2% CHX: MIC 0.0032 mg/mL</li>
+                        <li>Superior potency enhancement</li>
+                    </ul>
+                </div>
+                
+                <div class="protocol-card">
+                    <h4>🧬 Chitosan Nanoparticles</h4>
+                    <ul>
+                        <li>Superior biofilm disruption</li>
+                        <li>Enhanced dentinal penetration</li>
+                        <li>Biocompatible polysaccharide base</li>
+                        <li>Effective antifungal properties</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="future-tech">
+                <h4>🚀 2024-2025 Innovations</h4>
+                <ul>
+                    <li>Iron oxide magnetic nanoparticles coated with piroctone olamine</li>
+                    <li>CHX-loaded positively charged ionic liquid-protected AgNPs⁺</li>
+                    <li>Mesoporous calcium silicate nanoparticles for controlled drug release</li>
+                    <li>Targeted antimicrobial delivery with enhanced bioavailability</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="safety" class="content-section">
+            <h2 class="section-title">Evidence-Based Safety Protocols</h2>
+            
+            <div class="breakthrough-box">
+                <h4>⚠️ Concentration-Dependent Cytotoxicity Data</h4>
+                <p>Recent systematic reviews analyzing 18 endodontic irrigants demonstrate concentration-dependent cellular effects that guide clinical protocol optimization.</p>
+            </div>
+
+            <div class="subsection">
+                <h3>Biocompatibility Rankings (MTT Assay)</h3>
+                <ol>
+                    <li><strong>MTAD</strong> - Lowest cytotoxicity</li>
+                    <li><strong>Saline</strong> - Neutral baseline</li>
+                    <li><strong>2% CHX</strong> - Moderate safety profile</li>
+                    <li><strong>Low-concentration NaOCl (≤1.5%)</strong> - Acceptable for regenerative procedures</li>
+                    <li><strong>High-concentration NaOCl (>5.25%)</strong> - Highest cytotoxicity</li>
+                </ol>
+            </div>
+
+            <div class="evidence-box">
+                <h4>🚨 High-Risk Case Modifications</h4>
+                <ul>
+                    <li><strong>Indications:</strong> Open apex, perforations, proximity to vital structures</li>
+                    <li><strong>Protocol:</strong> Reduced concentrations (0.5-1.5% NaOCl)</li>
+                    <li><strong>Equipment:</strong> Closed-end side-venting needles (1-2mm from apex)</li>
+                    <li><strong>Technology:</strong> Negative pressure irrigation systems (EndoVac)</li>
+                    <li><strong>Assessment:</strong> CBCT pre-operative evaluation for anatomical variations</li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <h3>FDA Safety Alerts & Contraindications</h3>
+                <div class="protocols-grid">
+                    <div class="protocol-card">
+                        <h4>Chlorhexidine Anaphylaxis</h4>
+                        <ul>
+                            <li>43 cases worldwide (1969-2015)</li>
+                            <li>Enhanced patient screening required</li>
+                            <li>Comprehensive medical history assessment</li>
+                        </ul>
+                    </div>
+                    <div class="protocol-card">
+                        <h4>Ozone Therapy Contraindications</h4>
+                        <ul>
+                            <li>Pregnancy</li>
+                            <li>Acute alcohol intoxication</li>
+                            <li>Recent myocardial infarction</li>
+                            <li>G6PD deficiency</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="clinical" class="content-section">
+            <h2 class="section-title">Clinical Implications & Practice Standards</h2>
+            
+            <div class="key-points">
+                <h4>🎯 2024 Expert Consensus Protocol</h4>
+                <ol>
+                    <li><strong>2.5%-5.25% NaOCl</strong> during instrumentation</li>
+                    <li><strong>17% EDTA</strong> for 1 minute</li>
+                    <li><strong>Final NaOCl</strong> for 30 seconds with ultrasonic activation</li>
+                </ol>
+            </div>
+
+            <div class="subsection">
+                <h3>Sequential Irrigation Achieves</h3>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">5-log</div>
+                        <div>Bacterial Reduction</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">100%</div>
+                        <div>E. faecalis Biofilm Elimination</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">97%</div>
+                        <div>Clinical Success Rate</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="evidence-box">
+                <h4>⚠️ Chemical Incompatibility Awareness</h4>
+                <ul>
+                    <li><strong>NaOCl + CHX</strong> = toxic para-chloroaniline precipitate</li>
+                    <li><strong>Solution:</strong> Saline intermediate rinse required</li>
+                    <li><strong>NaOCl + EDTA</strong> premixing reduces available chlorine</li>
+                    <li><strong>Principle:</strong> Sequential application maintains individual effectiveness</li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <h3>Volume > Concentration Principle</h3>
+                <p><strong>Evidence-based finding:</strong> Large volumes with lower concentrations and extended contact times achieve superior results versus high concentrations with brief exposure.</p>
+            </div>
+
+            <div class="breakthrough-box">
+                <h4>🔍 Treatment Success Prediction</h4>
+                <p>Clinical evidence confirms bacterial persistence at obturation as the critical predictor of treatment failure, emphasizing negative culture results over time-based protocols.</p>
+            </div>
+        </div>
+
+        <div id="future" class="content-section">
+            <h2 class="section-title">Future Directions: Revolutionary Advances</h2>
+            
+            <div class="future-tech">
+                <h4>🤖 Artificial Intelligence Integration</h4>
+                <ul>
+                    <li>Real-time bacterial load assessment</li>
+                    <li>Predictive outcome modeling</li>
+                    <li>Automated parameter adjustment</li>
+                    <li>AI-powered protocol optimization</li>
+                </ul>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h4>Microrobotic Irrigation Systems</h4>
+                        <ul>
+                            <li>Microscale device targeting</li>
+                            <li>Real-time imaging guidance</li>
+                            <li>Precision delivery to specific regions</li>
+                            <li>Unprecedented control in complex canals</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-marker"></div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h4>Regenerative Endodontics Expansion</h4>
+                        <ul>
+                            <li>Growth factor preservation protocols</li>
+                            <li>Stem cell-compatible formulations</li>
+                            <li>Tissue engineering scaffold integration</li>
+                            <li>Biological over antimicrobial approaches</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-marker"></div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h4>Advanced Monitoring Technologies</h4>
+                        <ul>
+                            <li>Optical coherence tomography</li>
+                            <li>Fluorescence-based bacterial detection</li>
+                            <li>Real-time pH monitoring systems</li>
+                            <li>Quantitative treatment efficacy assessment</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-marker"></div>
+                </div>
+            </div>
+
+            <div class="key-points">
+                <h4>🔮 Precision Dental Medicine Era</h4>
+                <p>The future emphasizes intelligent integration of multiple technologies, personalized treatment protocols, and continued evidence-based optimization that prioritizes both antimicrobial efficacy and long-term tooth preservation.</p>
+            </div>
+        </div>
+
+        <div class="download-section">
+            <h3>Download Resources</h3>
+            <p>Access comprehensive materials for clinical implementation</p>
+            <button class="download-btn" onclick="downloadPDF()">📄 Download PDF Summary</button>
+            <button class="download-btn" onclick="downloadPowerPoint()">📊 Download PowerPoint</button>
+            <button class="download-btn" onclick="downloadProtocols()">📋 Download Clinical Protocols</button>
+            <button class="download-btn" onclick="printPage()">🖨️ Print This Page</button>
+        </div>
+
+        <div class="footer">
+            <p>© 2025 Endodontic Irrigants Research Compilation | Based on Latest Scientific Evidence 2022-2025</p>
+            <p>For educational purposes - Post-graduate dental education resource</p>
+        </div>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // Remove active class from all buttons
+            const buttons = document.querySelectorAll('.nav-btn');
+            buttons.forEach(button => {
+                button.classList.remove('active');
+            });
+            
+            // Show selected section
+            document.getElementById(sectionId).classList.add('active');
+            
+            // Add active class to clicked button
+            event.target.classList.add('active');
+            
+            // Smooth scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function downloadPDF() {
+            // Create comprehensive PDF content
+            const content = `
+            ENDODONTIC IRRIGANTS 2025: CLINICAL SUMMARY
+            
+            KEY BREAKTHROUGHS:
+            • Success rates improved from 72-85% to >97%
+            • GentleWave technology: 96.2% healing rates
+            • PIPS laser activation: Superior smear layer removal
+            • Nanotechnology applications: Enhanced penetration
+            
+            EVIDENCE-BASED PROTOCOLS:
+            1. NaOCl (2.5-5.25%) during instrumentation
+            2. EDTA (17%) for 1 minute
+            3. Final NaOCl with ultrasonic activation
+            
+            SAFETY CONSIDERATIONS:
+            • High-risk cases: ≤1.5% NaOCl
+            • Chemical incompatibilities require saline rinse
+            • Volume > concentration for optimal outcomes
+            
+            FUTURE DIRECTIONS:
+            • AI-powered protocol optimization
+            • Microrobotic irrigation systems
+            • Advanced monitoring technologies
+            `;
+            
+            const blob = new Blob([content], { type: 'text/plain' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'Endodontic_Irrigants_2025_Summary.txt';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            window.URL.revokeObjectURL(url);
+            
+            alert('PDF summary downloaded! For full PDF functionality, please use the VBA PowerPoint generator.');
+        }
+
+        function downloadPowerPoint() {
+            alert('To generate the complete PowerPoint presentation, please use the VBA code provided. This will create a comprehensive 25-slide presentation with all research data and clinical protocols.');
+        }
+
+        function downloadProtocols() {
+            const protocols = `
+            CLINICAL PROTOCOLS - ENDODONTIC IRRIGANTS 2025
+            
+            STANDARD PROTOCOL:
+            1. Initial irrigation: 2.5-5.25% NaOCl
+            2. Instrumentation with continuous NaOCl irrigation
+            3. EDTA 17% for 1 minute (smear layer removal)
+            4. Saline rinse (chemical incompatibility prevention)
+            5. Final NaOCl 30 seconds with ultrasonic activation
+            
+            HIGH-RISK CASES:
+            1. Reduced concentration: 0.5-1.5% NaOCl
+            2. Enhanced safety measures
+            3. Closed-end side-venting needles
+            4. CBCT pre-operative assessment
+            
+            REGENERATIVE PROTOCOLS:
+            1. Maximum 1.5% NaOCl
+            2. EDTA rescue protocol
+            3. Saline final rinse
+            4. Growth factor preservation
+            
+            REVOLUTIONARY TECHNOLOGIES:
+            • GentleWave: 4 mL/min continuous flow
+            • PIPS: Er:YAG 20 mJ, 50 μs pulses
+            • PUI: 3 × 20-second intervals
+            
+            CONTRAINDICATIONS:
+            • CHX allergies (43 documented cases)
+            • Ozone: pregnancy, G6PD deficiency
+            • High concentrations in regenerative cases
+            `;
+            
+            const blob = new Blob([protocols], { type: 'text/plain' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'Clinical_Protocols_Endodontic_Irrigants_2025.txt';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            window.URL.revokeObjectURL(url);
+        }
+
+        function printPage() {
+            window.print();
+        }
+
+        // Add smooth scrolling and enhanced interactivity
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add hover effects to cards
+            const cards = document.querySelectorAll('.stat-card, .protocol-card, .subsection');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px)';
+                });
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+
+            // Add progress indicator
+            const progressBar = document.createElement('div');
+            progressBar.style.cssText = `
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 0%;
+                height: 4px;
+                background: linear-gradient(45deg, #667eea, #764ba2);
+                z-index: 1000;
+                transition: width 0.3s ease;
+            `;
+            document.body.appendChild(progressBar);
+
+            window.addEventListener('scroll', function() {
+                const scrollPercent = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+                progressBar.style.width = scrollPercent + '%';
+            });
+
+            // Add keyboard navigation
+            document.addEventListener('keydown', function(e) {
+                const sections = ['overview', 'naocl', 'technologies', 'alternatives', 'bioactive', 'nanotechnology', 'safety', 'clinical', 'future'];
+                const currentActive = document.querySelector('.content-section.active').id;
+                const currentIndex = sections.indexOf(currentActive);
+                
+                if (e.key === 'ArrowRight' && currentIndex < sections.length - 1) {
+                    showSection(sections[currentIndex + 1]);
+                    document.querySelector(`[onclick="showSection('${sections[currentIndex + 1]}')"]`).classList.add('active');
+                } else if (e.key === 'ArrowLeft' && currentIndex > 0) {
+                    showSection(sections[currentIndex - 1]);
+                    document.querySelector(`[onclick="showSection('${sections[currentIndex - 1]}')"]`).classList.add('active');
+                }
+            });
+        });
+
+        // Add search functionality
+        function addSearchFeature() {
+            const searchContainer = document.createElement('div');
+            searchContainer.innerHTML = `
+                <div style="position: fixed; top: 20px; right: 20px; z-index: 1000;">
+                    <input type="text" id="searchInput" placeholder="Search content..." 
+                           style="padding: 10px; border-radius: 20px; border: 2px solid #667eea; outline: none;">
+                    <button onclick="clearSearch()" style="margin-left: 5px; padding: 10px; border: none; 
+                            background: #667eea; color: white; border-radius: 50%; cursor: pointer;">×</button>
+                </div>
+            `;
+            document.body.appendChild(searchContainer);
+
+            document.getElementById('searchInput').addEventListener('input', function(e) {
+                const searchTerm = e.target.value.toLowerCase();
+                const allText = document.querySelectorAll('.content-section p, .content-section li, .content-section h3, .content-section h4');
+                
+                allText.forEach(element => {
+                    if (searchTerm && element.textContent.toLowerCase().includes(searchTerm)) {
+                        element.style.backgroundColor = 'yellow';
+                        element.style.padding = '2px';
+                        element.style.borderRadius = '3px';
+                    } else {
+                        element.style.backgroundColor = '';
+                        element.style.padding = '';
+                        element.style.borderRadius = '';
+                    }
+                });
+            });
+        }
+
+        function clearSearch() {
+            document.getElementById('searchInput').value = '';
+            const highlighted = document.querySelectorAll('[style*="background-color: yellow"]');
+            highlighted.forEach(element => {
+                element.style.backgroundColor = '';
+                element.style.padding = '';
+                element.style.borderRadius = '';
+            });
+        }
+
+        // Initialize search feature
+        setTimeout(addSearchFeature, 1000);
+    </script>
+</body>
+</html>
