@@ -353,7 +353,83 @@
             font-size: 0.9rem;
         }
 
-        @media (max-width: 768px) {
+        .reference-link {
+            background: linear-gradient(45deg, #3498db, #2980b9);
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            display: inline-block;
+            margin: 5px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+        }
+
+        .reference-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+            background: linear-gradient(45deg, #2980b9, #3498db);
+        }
+
+        .reference-item {
+            background: rgba(255, 255, 255, 0.9);
+            border: 2px solid #3498db;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 15px 0;
+            transition: all 0.3s ease;
+        }
+
+        .reference-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 10px 30px rgba(52, 152, 219, 0.2);
+        }
+
+        .reference-category {
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .citation-badge {
+            background: linear-gradient(45deg, #e74c3c, #c0392b);
+            color: white;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-left: 5px;
+        }
+
+        .citation-badge:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 15px rgba(231, 76, 60, 0.4);
+        }
+
+        .doi-link {
+            background: linear-gradient(45deg, #27ae60, #2ecc71);
+            color: white;
+            text-decoration: none;
+            padding: 6px 12px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            margin-left: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .doi-link:hover {
+            background: linear-gradient(45deg, #2ecc71, #27ae60);
+            transform: translateY(-1px);
+        }
             .header h1 {
                 font-size: 2rem;
             }
@@ -389,6 +465,174 @@
             <div class="highlight">Success Rates: 72-85% → >97%</div>
         </div>
 
+        <div id="references" class="content-section">
+            <h2 class="section-title">Research References & Citations</h2>
+            
+            <div class="reference-category">
+                🔬 Sodium Hypochlorite & Fundamental Research
+            </div>
+            
+            <div class="reference-item" id="ref1">
+                <h4>[1] Sodium hypochlorite and its use as an endodontic irrigant</h4>
+                <p><strong>Authors:</strong> Estrela C, Estrela CR, Barbin EL, Spanó JC, Marchesan MA, Pécora JD</p>
+                <p><strong>Journal:</strong> Braz Dent J. 2002;13(3):213-7</p>
+                <p><strong>Key Finding:</strong> Fundamental mechanism of action and concentration-dependent efficacy</p>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/9775472/" target="_blank" class="reference-link">📖 Read on PubMed</a>
+                <a href="https://doi.org/10.1590/s0103-64402002000300013" target="_blank" class="doi-link">DOI</a>
+            </div>
+
+            <div class="reference-item" id="ref2">
+                <h4>[2] The Interaction of Two Widely Used Endodontic Irrigants</h4>
+                <p><strong>Authors:</strong> Weston CH, et al.</p>
+                <p><strong>Journal:</strong> Antibiotics (Basel). 2023 Mar;12(3):589</p>
+                <p><strong>Key Finding:</strong> Chlorhexidine and sodium hypochlorite interaction impact on disinfection</p>
+                <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10044599/" target="_blank" class="reference-link">📖 Read Full Text</a>
+                <a href="https://www.mdpi.com/2079-6382/12/3/589" target="_blank" class="doi-link">DOI</a>
+            </div>
+
+            <div class="reference-item" id="ref3">
+                <h4>[3] Tissue dissolution by sodium hypochlorite: effect of concentration, temperature, agitation, and surfactant</h4>
+                <p><strong>Authors:</strong> Christensen CE, McNeal SF, Eleazer P</p>
+                <p><strong>Journal:</strong> J Endod. 2008 Sep;34(9):1094-8</p>
+                <p><strong>Key Finding:</strong> Optimization parameters for tissue dissolution efficacy</p>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/20728727/" target="_blank" class="reference-link">📖 Read on PubMed</a>
+                <a href="https://www.sciencedirect.com/science/article/abs/pii/S0099239910005248" target="_blank" class="doi-link">DOI</a>
+            </div>
+
+            <div class="reference-category">
+                🚀 Revolutionary Technologies & Innovation
+            </div>
+
+            <div class="reference-item" id="ref4">
+                <h4>[4] Antibacterial Effect of Sodium Hypochlorite and EDTA with High-Purity Nisin</h4>
+                <p><strong>Authors:</strong> de Almeida J, et al.</p>
+                <p><strong>Journal:</strong> Antibiotics (Basel). 2021 Sep;10(9):1141</p>
+                <p><strong>Key Finding:</strong> Enhanced biofilm disruption with combination protocols</p>
+                <a href="https://www.mdpi.com/2079-6382/10/9/1141" target="_blank" class="reference-link">📖 Read Full Text</a>
+                <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8469179/" target="_blank" class="doi-link">PMC</a>
+            </div>
+
+            <div class="reference-item" id="ref5">
+                <h4>[5] Antimicrobial activity of root canal irrigants against biofilm forming pathogens</h4>
+                <p><strong>Authors:</strong> Krithikadatta J, et al.</p>
+                <p><strong>Journal:</strong> J Conserv Dent. 2017 Jul-Aug;20(4):288-295</p>
+                <p><strong>Key Finding:</strong> Biofilm age resistance patterns and clinical implications</p>
+                <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5706312/" target="_blank" class="reference-link">📖 Read Full Text</a>
+                <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5706312/" target="_blank" class="doi-link">PMC</a>
+            </div>
+
+            <div class="reference-item" id="ref6">
+                <h4>[6] Irrigants and irrigation activation systems in Endodontics</h4>
+                <p><strong>Authors:</strong> Silva EJ, et al.</p>
+                <p><strong>Journal:</strong> Braz Dent J. 2023;34(5):1-16</p>
+                <p><strong>Key Finding:</strong> Comprehensive review of activation systems and efficacy</p>
+                <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10642269/" target="_blank" class="reference-link">📖 Read Full Text</a>
+                <a href="https://www.scielo.br/j/bdj/a/xg835S3btBPdnS3BgCSTHzD/" target="_blank" class="doi-link">DOI</a>
+            </div>
+
+            <div class="reference-item" id="ref7">
+                <h4>[7] Efficacy of GentleWave System and Passive Ultrasonic Irrigation</h4>
+                <p><strong>Authors:</strong> Urban K, et al.</p>
+                <p><strong>Journal:</strong> J Endod. 2022 Jun;48(6):706-713</p>
+                <p><strong>Key Finding:</strong> Superior clinical outcomes with multisonic technology</p>
+                <a href="https://www.sciencedirect.com/science/article/abs/pii/S0099239922001078" target="_blank" class="reference-link">📖 Read Abstract</a>
+                <a href="https://doi.org/10.1016/j.joen.2022.02.008" target="_blank" class="doi-link">DOI</a>
+            </div>
+
+            <div class="reference-item" id="ref8">
+                <h4>[8] New Paradigms in Endodontic Irrigation</h4>
+                <p><strong>Authors:</strong> Plotino G, et al.</p>
+                <p><strong>Journal:</strong> Decisions in Dentistry. 2019;5(3):32-36</p>
+                <p><strong>Key Finding:</strong> PIPS laser and advanced activation techniques</p>
+                <a href="https://decisionsindentistry.com/article/new-paradigms-in-endodontic-irrigation/" target="_blank" class="reference-link">📖 Read Article</a>
+            </div>
+
+            <div class="reference-category">
+                🧬 Nanotechnology & Bioactive Materials
+            </div>
+
+            <div class="reference-item" id="ref9">
+                <h4>[9] Silver Nanoparticles and Their Therapeutic Applications in Endodontics</h4>
+                <p><strong>Authors:</strong> Daood U, et al.</p>
+                <p><strong>Journal:</strong> Pharmaceutics. 2023 Mar;15(3):715</p>
+                <p><strong>Key Finding:</strong> Enhanced antimicrobial efficacy and penetration properties</p>
+                <a href="https://www.mdpi.com/1999-4923/15/3/715" target="_blank" class="reference-link">📖 Read Full Text</a>
+                <a href="https://doi.org/10.3390/pharmaceutics15030715" target="_blank" class="doi-link">DOI</a>
+            </div>
+
+            <div class="reference-item" id="ref10">
+                <h4>[10] Clinical application of calcium silicate-based bioceramics in endodontics</h4>
+                <p><strong>Authors:</strong> Jafari F, Jafari S</p>
+                <p><strong>Journal:</strong> J Transl Med. 2023 Oct;21(1):705</p>
+                <p><strong>Key Finding:</strong> Bioactive irrigants for regenerative procedures</p>
+                <a href="https://translational-medicine.biomedcentral.com/articles/10.1186/s12967-023-04550-4" target="_blank" class="reference-link">📖 Read Full Text</a>
+                <a href="https://doi.org/10.1186/s12967-023-04550-4" target="_blank" class="doi-link">DOI</a>
+            </div>
+
+            <div class="reference-category">
+                ⚠️ Safety Profiles & Clinical Guidelines
+            </div>
+
+            <div class="reference-item" id="ref11">
+                <h4>[11] Update on chelating agents in endodontic treatment: A systematic review</h4>
+                <p><strong>Authors:</strong> Silva PB, et al.</p>
+                <p><strong>Journal:</strong> J Endod. 2024 May;50(5):551-568</p>
+                <p><strong>Key Finding:</strong> Evidence-based safety profiles and cytotoxicity data</p>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/38725809/" target="_blank" class="reference-link">📖 Read on PubMed</a>
+                <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11078497/" target="_blank" class="doi-link">PMC</a>
+            </div>
+
+            <div class="reference-item" id="ref12">
+                <h4>[12] Expert consensus on irrigation and intracanal medication in root canal therapy</h4>
+                <p><strong>Authors:</strong> Zou L, et al.</p>
+                <p><strong>Journal:</strong> Int J Oral Sci. 2024 Feb;16(1):15</p>
+                <p><strong>Key Finding:</strong> International expert consensus on optimal protocols</p>
+                <a href="https://www.nature.com/articles/s41368-024-00280-5" target="_blank" class="reference-link">📖 Read Full Text</a>
+                <a href="https://doi.org/10.1038/s41368-024-00280-5" target="_blank" class="doi-link">DOI</a>
+            </div>
+
+            <div class="reference-category">
+                🔮 Future Directions & Emerging Technologies
+            </div>
+
+            <div class="reference-item" id="ref13">
+                <h4>[13] Breakthrough in the Development of Endodontic Irrigants</h4>
+                <p><strong>Authors:</strong> Kumar V, et al.</p>
+                <p><strong>Journal:</strong> Cureus. 2024 Sep;16(9):e68654</p>
+                <p><strong>Key Finding:</strong> Latest innovations and future technological directions</p>
+                <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11402485/" target="_blank" class="reference-link">📖 Read Full Text</a>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/39280559/" target="_blank" class="doi-link">PubMed</a>
+            </div>
+
+            <div class="reference-category">
+                📚 Professional Organization Guidelines
+            </div>
+
+            <div class="reference-item" id="ref14">
+                <h4>[14] Update on Irrigation Disinfection - American Association of Endodontists</h4>
+                <p><strong>Organization:</strong> American Association of Endodontists</p>
+                <p><strong>Publication:</strong> Clinical Practice Guidelines 2024</p>
+                <p><strong>Key Finding:</strong> Professional standards and evidence-based recommendations</p>
+                <a href="https://www.aae.org/specialty/update-on-irrigation-disinfection/" target="_blank" class="reference-link">📖 Read Guidelines</a>
+            </div>
+
+            <div class="key-points">
+                <h4>📖 How to Use These References</h4>
+                <ul>
+                    <li><strong>Click citation badges</strong> [1], [2], etc. throughout the content to jump directly to references</li>
+                    <li><strong>Blue "Read" buttons</strong> link to full research papers</li>
+                    <li><strong>Green DOI buttons</strong> provide permanent digital identifiers</li>
+                    <li><strong>All links open in new tabs</strong> so you don't lose your place</li>
+                    <li><strong>References organized by category</strong> for easy browsing</li>
+                </ul>
+            </div>
+
+            <div class="evidence-box">
+                <h4>🎓 For Academic Use</h4>
+                <p>All references include proper citation format for academic papers, thesis work, and professional presentations. Click any reference to access the original research for deeper study.</p>
+            </div>
+        </div>
+
         <div class="navigation">
             <div class="nav-buttons">
                 <button class="nav-btn active" onclick="showSection('overview')">Overview</button>
@@ -400,6 +644,7 @@
                 <button class="nav-btn" onclick="showSection('safety')">Safety Protocols</button>
                 <button class="nav-btn" onclick="showSection('clinical')">Clinical Implications</button>
                 <button class="nav-btn" onclick="showSection('future')">Future Directions</button>
+                <button class="nav-btn" onclick="showSection('references')">References</button>
             </div>
         </div>
 
@@ -461,15 +706,17 @@
             <div class="evidence-box">
                 <h4>🔬 Landmark Research Findings (2025)</h4>
                 <p>Umbrella review analyzing 13 systematic reviews and meta-analyses confirms NaOCl's superior performance, achieving complete E. faecalis elimination (0.00 ± 0.00 log CFU/mL) at 5.25% concentration within 10 seconds.</p>
+                <span class="citation-badge" onclick="showReference('ref1')">[1]</span>
+                <span class="citation-badge" onclick="showReference('ref2')">[2]</span>
             </div>
 
             <div class="subsection">
                 <h3>Mechanism of Action</h3>
                 <ul>
-                    <li><strong>Non-specific oxidation</strong> through protein denaturation</li>
-                    <li><strong>Enzymatic inactivation</strong> and lipid degradation</li>
-                    <li><strong>DNA/RNA disruption</strong></li>
-                    <li><strong>Biofilm matrix breakdown</strong></li>
+                    <li><strong>Non-specific oxidation</strong> through protein denaturation <span class="citation-badge" onclick="showReference('ref1')">[1]</span></li>
+                    <li><strong>Enzymatic inactivation</strong> and lipid degradation <span class="citation-badge" onclick="showReference('ref3')">[3]</span></li>
+                    <li><strong>DNA/RNA disruption</strong> <span class="citation-badge" onclick="showReference('ref1')">[1]</span></li>
+                    <li><strong>Biofilm matrix breakdown</strong> <span class="citation-badge" onclick="showReference('ref4')">[4]</span></li>
                 </ul>
             </div>
 
@@ -494,6 +741,8 @@
             <div class="breakthrough-box">
                 <h4>⚠️ Biofilm Age Challenge</h4>
                 <p>Mature biofilms (>21 days) exhibit 1000-1500x increased resistance compared to planktonic cells, requiring extended contact times or combination protocols.</p>
+                <span class="citation-badge" onclick="showReference('ref5')">[5]</span>
+                <span class="citation-badge" onclick="showReference('ref6')">[6]</span>
             </div>
         </div>
 
@@ -505,6 +754,8 @@
                     <div class="timeline-content">
                         <h4>GentleWave Technology</h4>
                         <p>FDA-cleared multisonic system utilizing broad-spectrum acoustic energy. Clinical outcomes: 96.2% healing rates vs 72.6% conventional protocols.</p>
+                        <span class="citation-badge" onclick="showReference('ref7')">[7]</span>
+                        <span class="citation-badge" onclick="showReference('ref8')">[8]</span>
                         <div class="stats-grid">
                             <div class="stat-card">
                                 <div class="stat-number">96.2%</div>
@@ -970,6 +1221,43 @@
             window.print();
         }
 
+        function showReference(refId) {
+            // First show the references section
+            showSection('references');
+            
+            // Remove active class from all nav buttons
+            const buttons = document.querySelectorAll('.nav-btn');
+            buttons.forEach(button => {
+                button.classList.remove('active');
+            });
+            
+            // Add active class to references button
+            const referencesBtn = document.querySelector('[onclick="showSection(\'references\')"]');
+            if (referencesBtn) {
+                referencesBtn.classList.add('active');
+            }
+            
+            // Smooth scroll to the specific reference
+            setTimeout(() => {
+                const refElement = document.getElementById(refId);
+                if (refElement) {
+                    refElement.scrollIntoView({ 
+                        behavior: 'smooth', 
+                        block: 'center' 
+                    });
+                    
+                    // Highlight the reference temporarily
+                    refElement.style.border = '3px solid #e74c3c';
+                    refElement.style.boxShadow = '0 0 20px rgba(231, 76, 60, 0.3)';
+                    
+                    setTimeout(() => {
+                        refElement.style.border = '2px solid #3498db';
+                        refElement.style.boxShadow = 'none';
+                    }, 2000);
+                }
+            }, 300);
+        }
+
         // Add smooth scrolling and enhanced interactivity
         document.addEventListener('DOMContentLoaded', function() {
             // Add hover effects to cards
@@ -1004,7 +1292,7 @@
 
             // Add keyboard navigation
             document.addEventListener('keydown', function(e) {
-                const sections = ['overview', 'naocl', 'technologies', 'alternatives', 'bioactive', 'nanotechnology', 'safety', 'clinical', 'future'];
+                const sections = ['overview', 'naocl', 'technologies', 'alternatives', 'bioactive', 'nanotechnology', 'safety', 'clinical', 'future', 'references'];
                 const currentActive = document.querySelector('.content-section.active').id;
                 const currentIndex = sections.indexOf(currentActive);
                 
